@@ -1,0 +1,22 @@
+*, *::before *::after {box-sizing: border-box;}
+
+body {
+    width: autopx;
+    height: 800px;
+    margin: 15px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+} 
+
+
+.beat {
+    animation: 2.5s ease 0s infinite beat;
+}
+
+  
+@keyframes beat {
+    0%, 50%, 100% { transform: scale(1, 1); }
+    30%, 80% { transform: scale(0.92, 0.95); }
+}
+
